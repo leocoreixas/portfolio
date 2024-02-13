@@ -13,7 +13,6 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  console.log(process.env.REACT_APP_LINKEDIN);
 
   useEffect(() => {
     const onScroll = () => {

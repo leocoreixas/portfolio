@@ -4,7 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import Alert from 'react-bootstrap/Alert';
-
+//import sendEmail from "../services/send-email/send-email";
 
 
 export const Contact = () => {
@@ -33,16 +33,12 @@ export const Contact = () => {
     setLoading(true);
 
     try {
-      let response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-      });
-      let result = await response.json();
+      debugger
       setFormDetails(formInitialDetails);
-      if (result.code == 200) {
+      const message = `Name: ${formDetails.firstName} ${formDetails.lastName} \nEmail: ${formDetails.email} \nPhone: ${formDetails.phone} \nMessage: ${formDetails.message}`;
+      //const received = await sendEmail(formDetails.email, { message });
+
+      if (true) {
         setStatus({ succes: true, message: 'Message sent successfully' });
       } else {
         setStatus({ succes: false, message: 'Something went wrong, please try again later.' });

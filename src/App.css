@@ -374,6 +374,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -607,7 +608,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #ffffff;
   border-radius: 55px;
   color: #121212;
-  padding: 45px 45px;
+  padding: 65px 65px;
   max-height: 50px;
   margin-bottom: 80px;
   margin-top: -52px;
@@ -624,11 +625,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: space-between;
 }
 
+.newsletter-bx .resume-select {
+  width: 40%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 8px 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+
+}
+
 .newsletter-bx .resume-bx {
   font-weight: 700;
   color: #000000;
   border: 1px solid #000000;
-  padding: 8px 24px;
+  padding: 8px 14px;
   font-size: 18px;
   position: relative;
   background-color: transparent;
@@ -636,6 +652,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 20px;
   width: 100%;
   text-align: center;
+  margin-left: 20px;
 }
 
 .newsletter-bx .resume-bx::before {
@@ -656,7 +673,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
+.language-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 
+.language-button {
+  background-color: #6431ab;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+  background-color: #9e62f1;
+}
 
 .footer img {
   width: 26%;

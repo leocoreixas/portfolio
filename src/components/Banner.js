@@ -55,7 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h1>{`Hi! I'm Leonardo Coreixas`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Full Stack" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! I'm Leonardo Coreixas`} <span className="txt-rotate"  data-rotate='[ "Web Developer", "Full Stack" ]'><span className="wrap">{text}</span></span></h1>
                   <h4>Passionate about creating and developing web applications.</h4>
                   <p>
                     A seasoned Computer Science professional with a Bachelor's degree from the Federal Fluminense University (UFF). Having completed my undergraduate studies, I'm embarking on a new journey this year as I pursue a Master's degree in Emerging Technologies with a focus on Blockchain at UFF.
