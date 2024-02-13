@@ -1,46 +1,32 @@
-import { useState, useEffect } from "react";
-import { Col, Row, Alert } from "react-bootstrap";
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import pdfUrl from "../assets/resume/resume.pdf";
 
-export const Newsletter = ({ status, message, onValidated }) => {
-  const [email, setEmail] = useState('');
+export const Newsletter = () => {
+  const handleDownload = () => {
 
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
+    const anchorElement = document.createElement('a');
+    anchorElement.href = pdfUrl;
+    anchorElement.target = '_blank'; // Open the file in a new tab
+    anchorElement.download = 'resume.pdf'; // Set the file name
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    email &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email
-    })
-  }
-
-  const clearFields = () => {
-    setEmail('');
-  }
+    anchorElement.click();
+  };
 
   return (
-      <Col lg={12}>
-        <div className="newsletter-bx wow slideInUp">
-          <Row>
-            <Col lg={12} md={6} xl={5}>
-              <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
-              {status === 'sending' && <Alert>Sending...</Alert>}
-              {status === 'error' && <Alert variant="danger">{message}</Alert>}
-              {status === 'success' && <Alert variant="success">{message}</Alert>}
-            </Col>
-            <Col md={6} xl={7}>
-              <form onSubmit={handleSubmit}>
-                <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
-            </Col>
-          </Row>
-        </div>
-      </Col>
-  )
-}
+    <Col lg={12}>
+      <div className="newsletter-bx wow slideInUp">
+        <Row >
+          <Col lg={12} md={9} xl={9}>
+            <h3 className="text-resume" >Download my Resumé to learn more about my qualifications:</h3>
+          </Col>
+          <Col md={3} xl={3}>
+            <button className="resume-bx" onClick={handleDownload}>
+              Download Resumé
+            </button>
+          </Col>
+        </Row>
+      </div>
+    </Col>
+  );
+};

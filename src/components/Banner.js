@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import Coding from "../assets/img/coding.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { HashLink } from 'react-router-hash-link';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Web Developer", "Full Stack"];
   const period = 2000;
 
   useEffect(() => {
@@ -56,9 +55,16 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <h1>{`Hi! I'm Leonardo Coreixas`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Full Stack" ]'><span className="wrap">{text}</span></span></h1>
+                  <h4>Passionate about creating and developing web applications.</h4>
+                  <p>
+                    A seasoned Computer Science professional with a Bachelor's degree from the Federal Fluminense University (UFF). Having completed my undergraduate studies, I'm embarking on a new journey this year as I pursue a Master's degree in Emerging Technologies with a focus on Blockchain at UFF.
+                  </p>
+                  {/* Professional Background */}
+                  <h3>Professional Background:</h3>
+                  <p>
+                    My career as a Software Developer has seen me thrive in various roles across different organizations. From leading projects to contributing to full-stack development and back-end systems, I've garnered extensive experience in navigating complex technological landscapes.
+                  </p>
                 </div>}
             </TrackVisibility>
           </Col>
@@ -66,7 +72,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={Coding} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>
