@@ -6,6 +6,7 @@ export const ResumeForm = () => {
   return (
     <>
       <MailchimpSubscribe
+        url={process.env.REACT_APP_MAILCHIMP_URL}
         render={({ subscribe, status, message }) => (
           <Resume
             status={status}

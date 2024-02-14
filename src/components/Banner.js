@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
 import Coding from "../assets/img/coding.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';

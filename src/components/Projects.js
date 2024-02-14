@@ -1,67 +1,15 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav, Carousel, Card } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import Button from 'react-bootstrap/Button';
 import ModalMedium from './ModalMedium';
+import projects  from '../helpers/projects/projects';
 
 export const Projects = () => {
   const years = [2021, 2022, 2023, 2024];
-  const projects = [
-    {
-      index: 0,
-      title: "Business Startup 1",
-      description: "Design & Development",
-      details: "This is a project I worked on for a startup company. I was responsible for the design and development of the website.",
-      imgUrl: projImg1,
-      year: 2021,
-    },
-    {
-      index: 1,
-      title: "Business Startup 2",
-      description: "Design & Development",
-      details: "This is a project I worked on for a startup company. I was responsible for the design and development of the website.",
-      imgUrl: projImg2,
-      year: 2021,
-    },
-    {
-      index: 2,
-      title: "Business Startup 3",
-      description: "Design & Development",
-      details: "This is a project I worked on for a startup company. I was responsible for the design and development of the website.",
-      imgUrl: projImg3,
-      year: 2021,
-    },
-    {
-      index: 3,
-      title: "Business Startup 4",
-      description: "Design & Development",
-      details: "This is a project I worked on for a startup company. I was responsible for the design and development of the website.",
-      imgUrl: projImg1,
-      year: 2022,
-    },
-    {
-      index: 4,
-      title: "Business Startup 5",
-      description: "Design & Development",
-      details: "This is a project I worked on for a startup company. I was responsible for the design and development of the website.",
-      imgUrl: projImg2,
-      year: 2023,
-    },
-    {
-      index: 5,
-      title: "Business Startup 6",
-      description: "Design & Development",
-      details: "This is a project I worked on for a startup company. I was responsible for the design and development of the website.",
-      imgUrl: projImg3,
-      year: 2024,
-    },
-  ];
+
 
   const [activeYear, setActiveYear] = useState(years[0]);
   const [activeModal, setActiveModal] = useState(null); 
@@ -129,8 +77,8 @@ export const Projects = () => {
                               .filter((project) => project.year === year)
                               .map((project, projectIndex) => (
                                 <Col md={6} lg={4} key={projectIndex}>
-                                  <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src={project.imgUrl} />
+                                  <Card style={{ width: '20rem'}}>
+                                    <Card.Img style={{maxHeight: '200px'}} variant="top" src={project.imgUrl} />
                                     <Card.Body className="d-flex flex-column align-items-center justify-content-center">
                                       <Card.Text>
                                         {project.title}
@@ -150,6 +98,7 @@ export const Projects = () => {
                                     description={project.description}
                                     year={project.year}
                                     details={project.details}
+                                    tecnologies={project.technologies}
                                   />
                                 </Col>
                               ))}

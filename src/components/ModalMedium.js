@@ -1,8 +1,35 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import { FaAngular, FaDotCircle, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
 
 const ModalMedium = (props) => {
-  console.log(props);
+  const renderTechnologyIcons = () => {
+    const technologies = props.tecnologies ? props.tecnologies : [];
+    debugger
+    return technologies.map((tech, index) => {
+      switch (tech) {
+        case 'Angular':
+          return <FaAngular key={index} style={{ marginRight: '5px' }} />;
+        case '.NET':
+          return <FaDotCircle key={index} style={{ marginRight: '5px' }} />;
+        case 'Node.js':
+          return <FaNodeJs key={index} style={{ marginRight: '5px' }} />;
+        case 'React':
+          return <FaReact key={index} style={{ marginRight: '5px' }} />;
+        case 'Python':
+          return <FaPython key={index} style={{ marginRight: '5px' }} />;
+        case 'AWS':
+          return <div key={index} className="technology-text">AWS</div>;
+        case 'Azure':
+          return <div key={index} className="technology-text">Azure</div>;
+        case 'blockchain':
+          return <div key={index} className="technology-text">Blockchain</div>;
+        default:
+          return null;
+      }
+    });
+  };
+
   return (
     <Modal
       {...props}
@@ -26,10 +53,13 @@ const ModalMedium = (props) => {
         <p>
           {props.details}
         </p>
+        <div style={{ marginTop: '10px' }}>
+          <p>Technologies used:</p>
+          {renderTechnologyIcons()}
+        </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button style={{ backgroundColor: "#6549ad" }}
-          onClick={props.onHide}>Close</Button>
+        <Button style={{ backgroundColor: "#6549ad" }} onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );
