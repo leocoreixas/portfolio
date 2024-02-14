@@ -5,21 +5,21 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import Button from 'react-bootstrap/Button';
 import ModalMedium from './ModalMedium';
-import projects  from '../helpers/projects/projects';
+import projects from '../helpers/projects/projects';
 
 export const Projects = () => {
   const years = [2021, 2022, 2023, 2024];
 
 
   const [activeYear, setActiveYear] = useState(years[0]);
-  const [activeModal, setActiveModal] = useState(null); 
+  const [activeModal, setActiveModal] = useState(null);
 
   const handleCarouselSelect = (selectedIndex, e) => {
     setActiveYear(years[selectedIndex]);
   };
 
   const handleShowModal = (projectIndex) => {
-    setActiveModal(projectIndex); 
+    setActiveModal(projectIndex);
   };
 
   const handleCloseModal = () => {
@@ -77,20 +77,24 @@ export const Projects = () => {
                               .filter((project) => project.year === year)
                               .map((project, projectIndex) => (
                                 <Col md={6} lg={4} key={projectIndex}>
-                                  <Card style={{ width: '20rem'}}>
-                                    <Card.Img style={{maxHeight: '200px'}} variant="top" src={project.imgUrl} />
-                                    <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                                      <Card.Text>
-                                        {project.title}
-                                      </Card.Text>
-                                      <Button
-                                        style={{ backgroundColor: "#6549ad" }}
-                                        onClick={() => handleShowModal(project.index)}
-                                      >
-                                        See more details
-                                      </Button>
-                                    </Card.Body>
+                                  <Card style={{ width: '20rem', height: '90%', paddingBottom: '20px' }}>
+                                    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', paddingBottom: '20px' }}>
+                                      <Card.Img style={{ maxHeight: '130px', flex: '1' }} variant="top" src={project.imgUrl} />
+                                      <Card.Body className="d-flex flex-column align-items-center justify-content-center" style={{ flex: '1' }}>
+                                        <Card.Text style={{ marginBottom: '20px' }}>
+                                          {project.title}
+                                        </Card.Text>
+                                        <Button
+                                          style={{ backgroundColor: "#6549ad", alignSelf: 'center' }}
+                                          onClick={() => handleShowModal(project.index)}
+                                        >
+                                          See more details
+                                        </Button>
+                                      </Card.Body>
+                                    </div>
                                   </Card>
+
+
                                   <ModalMedium
                                     show={activeModal === project.index} // Show modal if its index matches the activeModal
                                     onHide={handleCloseModal}

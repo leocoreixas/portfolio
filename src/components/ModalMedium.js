@@ -5,7 +5,6 @@ import { FaAngular, FaDotCircle, FaNodeJs, FaPython, FaReact } from 'react-icons
 const ModalMedium = (props) => {
   const renderTechnologyIcons = () => {
     const technologies = props.tecnologies ? props.tecnologies : [];
-    debugger
     return technologies.map((tech, index) => {
       switch (tech) {
         case 'Angular':
@@ -24,6 +23,8 @@ const ModalMedium = (props) => {
           return <div key={index} className="technology-text">Azure</div>;
         case 'blockchain':
           return <div key={index} className="technology-text">Blockchain</div>;
+        case 'AI':
+          return <div key={index} className="technology-text">AI</div>;
         default:
           return null;
       }

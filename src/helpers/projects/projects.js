@@ -24,7 +24,7 @@ const projects = [
       description: "Development of a complete school management system for Colégio Poliedro.",
       details: "This project involved creating a complete system to manage the operations of a renowned educational institution. We used Node.js to develop the system, ensuring scalability and performance. Additionally, we incorporated advanced import and export tools to facilitate data exchange. The system was successfully deployed and used by Colégio Poliedro until 2023.",
       imgUrl: Poliedro,
-      technologies: ["Node.js"]
+      technologies: ["Node.js", "Azure"]
     },
     {
       index: 2,
@@ -33,7 +33,7 @@ const projects = [
       description: "Development of an export system for the Arab-Brazilian Chamber of Commerce.",
       details: "This project aimed to streamline the process of exporting products to Arab countries, ensuring security and transparency through blockchain technology. We used Angular and .NET to develop the system, and leveraged AWS services for additional support. The project was successfully completed in 2023, contributing to simplifying commercial operations between Brazil and Arab countries.",
       imgUrl: CCAB,
-      technologies: ["Angular", ".NET", "blockchain", "AWS"]
+      technologies: ["Angular", ".NET", "blockchain", "AWS", "Azure"]
     },
     {
       index: 3,
