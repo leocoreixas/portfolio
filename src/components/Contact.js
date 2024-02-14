@@ -27,6 +27,14 @@ export const Contact = () => {
     })
   }
 
+  const validateForm = () => {
+    if (!formDetails.firstName || !formDetails.lastName || !formDetails.email || !formDetails.phone || !formDetails.message) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
@@ -86,7 +94,7 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} className="px-1">
                         <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                        <button type="submit" disabled={loading}><span>{buttonText}</span></button>
+                        <button type="submit" disabled={loading || !validateForm()}><span>{buttonText}</span></button>
                       </Col>
                       {
                         status.message &&

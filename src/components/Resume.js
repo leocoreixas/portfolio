@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import pdfPathPt from "../assets/resume/resume_pt.pdf";
 import pdfPathEn from "../assets/resume/resume_en.pdf";
 
-export const Newsletter = () => {
+export const Resume = () => {
   const [language, setLanguage] = useState("en");
 
   const handleDownload = () => {
