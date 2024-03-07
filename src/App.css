@@ -699,3 +699,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 12px;
   font-weight: bold;
 }
+
+.contact-options {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-link {
+  color: #0b233d;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
