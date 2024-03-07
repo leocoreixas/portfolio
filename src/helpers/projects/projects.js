@@ -11,8 +11,8 @@ const projects = [
     {
       index: 0,
       year: 2021,
-      title: "Internship - Car Wash System",
-      description: "Development of a management system for a car wash, integrating .NET and Angular technologies.",
+      title: "Car Wash",
+      description: "Internship - Development of a management system for a car wash, integrating .NET and Angular technologies.",
       details: "This project consisted of creating a comprehensive system to manage the operations of a car wash. We used .NET for the back-end and Angular for the front-end, ensuring an intuitive and efficient user experience. Additionally, the system was deployed on the Azure platform, leveraging its resources for scalability and security. The project was successfully completed in 2021.",
       imgUrl: Acquatec,
       technologies: ["Angular", ".NET"]

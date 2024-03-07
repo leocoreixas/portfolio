@@ -47,9 +47,9 @@ export const Contact = () => {
       //const received = await sendEmail(formDetails.email, { message });
 
       if (true) {
-        setStatus({ succes: true, message: 'Message sent successfully' });
+        setStatus({ succes: true, message: 'Message sent successfully!' });
       } else {
-        setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
+        setStatus({ succes: false, message: 'Something went wrong, please try again later!' });
       }
       setButtonText("Send");
       setLoading(false);
