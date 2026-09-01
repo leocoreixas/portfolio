@@ -4,7 +4,7 @@ import { Map, Marker, Popup, NavigationControl } from 'react-map-gl/maplibre'
 import { useTranslation } from 'react-i18next'
 import { projects } from '@/lib/projects'
 
-const MAP_STYLE = 'https://demotiles.maplibre.org/style.json'
+const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
 
 export function MapSection() {
   const {
