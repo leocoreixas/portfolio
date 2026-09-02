@@ -19,7 +19,7 @@ export default {
   about: {
     kicker: 'Perfil consultor',
     title: 'Sobre',
-    bio: 'Me chamo Danilo Santos, atuo com Geoprocessamento há 8 anos, com foco em Gestão Ambiental e Análise Territorial. Efetuo transformações de dados espaciais brutos e imagens de sensoriamento remoto em diagnósticos técnicos e produtos cartográficos de alta precisão. Minha trajetória é voltada para a aplicação do SIG (Sistemas de Informação Geográfica) na solução de desafios socioambientais, englobando desde a interpretação de imagens de satélite até o mapeamento temático para suporte à tomada de decisão em planejamento urbano e conservação da biodiversidade.',
+    bio: 'A D.V.M.S. Environmental Solutions atua na área de Geoprocessamento, com foco em Gestão Ambiental e Análise Territorial. Seu trabalho é direcionado à transformação de dados espaciais brutos e imagens de sensoriamento remoto em diagnósticos técnicos e produtos cartográficos de alta precisão. A aplicação de Sistemas de Informação Geográfica (SIG) é utilizada como ferramenta estratégica para enfrentar desafios socioambientais, abrangendo desde a interpretação de imagens de satélite até o desenvolvimento de mapeamentos temáticos que apoiam a tomada de decisão em planejamento urbano e conservação da biodiversidade.',
     factExperience: '8 anos de experiência',
     factExperienceLabel: 'em Geoprocessamento & SIG',
     factEducation: 'Ciência Ambiental',

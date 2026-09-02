@@ -19,7 +19,7 @@ export default {
   about: {
     kicker: 'Consultant profile',
     title: 'About',
-    bio: "My name is Danilo Santos, and I've worked in Geoprocessing for 8 years, focused on Environmental Management and Territorial Analysis. I transform raw spatial data and remote sensing imagery into technical diagnostics and high-precision cartographic products. My career is dedicated to applying GIS (Geographic Information Systems) to socio-environmental challenges, from satellite image interpretation to thematic mapping that supports decision-making in urban planning and biodiversity conservation.",
+    bio: 'D.V.M.S. Environmental Solutions operates in the field of Geoprocessing, with a focus on Environmental Management and Territorial Analysis. Its work is directed at transforming raw spatial data and remote sensing imagery into technical diagnostics and high-precision cartographic products. The application of Geographic Information Systems (GIS) is used as a strategic tool to address socio-environmental challenges, ranging from satellite image interpretation to the development of thematic mapping that supports decision-making in urban planning and biodiversity conservation.',
     factExperience: '8 years of experience',
     factExperienceLabel: 'in Geoprocessing & GIS',
     factEducation: 'Environmental Science',
