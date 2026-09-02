@@ -14,7 +14,7 @@ export default {
       'Geoprocessing and Environmental Science applied to conservation, licensing, and land asset valuation.',
     ctaProjects: 'View maps & projects',
     ctaContact: 'Talk to Danilo',
-    role: 'Environmental Scientist · Geoprocessing & GIS',
+    role: 'Environmental Science · Geoprocessing & GIS',
   },
   about: {
     kicker: 'Consultant profile',
