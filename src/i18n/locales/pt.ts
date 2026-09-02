@@ -17,9 +17,9 @@ export default {
     role: 'Cientista Ambiental · Geoprocessamento & SIG',
   },
   about: {
-    kicker: 'Perfil consultor',
-    title: 'Sobre',
-    bio: 'A D.V.M.S. Environmental Solutions atua na área de Geoprocessamento, com foco em Gestão Ambiental e Análise Territorial. Seu trabalho é direcionado à transformação de dados espaciais brutos e imagens de sensoriamento remoto em diagnósticos técnicos e produtos cartográficos de alta precisão. A aplicação de Sistemas de Informação Geográfica (SIG) é utilizada como ferramenta estratégica para enfrentar desafios socioambientais, abrangendo desde a interpretação de imagens de satélite até o desenvolvimento de mapeamentos temáticos que apoiam a tomada de decisão em planejamento urbano e conservação da biodiversidade.',
+    kicker: 'Sobre',
+    title: '',
+      bio: 'A D.V.M.S. Environmental Solutions desenvolve soluções em Geoprocessamento voltadas à Gestão Ambiental e Análise Territorial. Converte dados espaciais e imagens de sensoriamento remoto em diagnósticos técnicos e produtos cartográficos de alta precisão. Com o uso de SIG, oferecemos suporte estratégico ao planejamento urbano e à conservação da biodiversidade, contribuindo para soluções eficazes em desafios socioambientais.',
     factExperience: '8 anos de experiência',
     factExperienceLabel: 'em Geoprocessamento & SIG',
     factEducation: 'Ciência Ambiental',
@@ -32,7 +32,7 @@ export default {
     title: 'Ferramentas e competências técnicas',
     groups: [
       {
-        name: 'SIG',
+        name: 'Sistema de Informação Geográfica (SIG)',
         items: ['ArcGIS Pro (incl. ArcGIS Online)', 'ArcMap', 'QGIS'],
       },
       {

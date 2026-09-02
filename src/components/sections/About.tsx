@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Globe2, Sprout } from 'lucide-react'
+import { Globe2, Sprout } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export function About() {
@@ -10,11 +10,6 @@ export function About() {
       icon: Sprout,
       value: t('about.factExperience'),
       label: t('about.factExperienceLabel'),
-    },
-    {
-      icon: GraduationCap,
-      value: t('about.factEducation'),
-      label: t('about.factEducationLabel'),
     },
     {
       icon: Globe2,
