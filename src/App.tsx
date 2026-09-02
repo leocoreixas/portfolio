@@ -1,4 +1,3 @@
-import { Suspense, lazy } from 'react'
 import { About } from '@/components/sections/About'
 import { Contact } from '@/components/sections/Contact'
 import { Hero } from '@/components/sections/Hero'
@@ -9,11 +8,12 @@ import { Skills } from '@/components/sections/Skills'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
-const MapSection = lazy(() =>
-  import('@/components/sections/MapSection').then((m) => ({
-    default: m.MapSection,
-  }))
-)
+// MapSection temporarily disabled (interactive map rendering not ready yet)
+// const MapSection = lazy(() =>
+//   import('@/components/sections/MapSection').then((m) => ({
+//     default: m.MapSection,
+//   }))
+// )
 
 function App() {
   return (
@@ -25,9 +25,6 @@ function App() {
         <Skills />
         <Services />
         <Projects />
-        <Suspense fallback={<div className="h-[480px] bg-paper-100" />}>
-          <MapSection />
-        </Suspense>
         <ImpactMarket />
         <Contact />
       </main>
