@@ -1,8 +1,15 @@
 import 'maplibre-gl/dist/maplibre-gl.css'
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
+import { setWorkerUrl } from 'maplibre-gl'
 import { useState } from 'react'
 import { Map, Marker, Popup, NavigationControl } from 'react-map-gl/maplibre'
 import { useTranslation } from 'react-i18next'
 import { projects } from '@/lib/projects'
+
+// Vite doesn't statically discover maplibre's dynamically-named worker file, so the
+// production build never emits it, leaving the map without vector tile rendering.
+// Pointing it at the explicitly bundled worker asset fixes that.
+setWorkerUrl(maplibreWorkerUrl)
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
 
