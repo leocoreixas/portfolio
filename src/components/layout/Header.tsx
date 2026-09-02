@@ -8,6 +8,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
+import portfolioMapasProfissionais from '@/assets/projects/Portfolio_Mapas_Profissionais.png'
 
 const NAV_ITEMS = [
   { key: 'about', href: '#sobre' },
@@ -25,12 +26,9 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-paper-50/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <a href="#top" className="flex items-center gap-2">
-          <span className="font-display text-lg font-semibold text-forest-800">
-            D.V.M.S
-          </span>
-          <span className="hidden text-xs tracking-wide text-muted-foreground sm:inline">
-            Environmental Solutions
-          </span>
+          <img src={portfolioMapasProfissionais} 
+          style={{minWidth: '77px', minHeight: '57px'}} 
+          alt="Portfolio Mapas Profissionais" className="h-8 w-8" />
         </a>
 
         <nav className="hidden items-center gap-1 md:flex">

@@ -6,7 +6,6 @@ import maricaWildlife from '@/assets/projects/marica-soltura-classificacao.jpg'
 import niteroiCycling from '@/assets/projects/niteroi-cicloviario.jpg'
 import serraDaCanastra from '@/assets/projects/serra-da-canastra.jpg'
 import riparianVegetation from '@/assets/projects/vegetacao-ciliar.jpg'
-
 export interface Project {
   id: string
   image: string
